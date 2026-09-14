@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600&family=Poppins:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+body {
+    margin: 0;
+}
+@keyframes whatsapp-bounce {
+
+    0%,
+    82%,
+    100% {
+        transform: translateY(0);
+    }
+
+    86% {
+        transform: translateY(-8px);
+    }
+
+    90% {
+        transform: translateY(0);
+    }
+
+    94% {
+        transform: translateY(-4px);
+    }
+
+    97% {
+        transform: translateY(0);
+    }
+}
+
+.whatsapp-bounce {
+    animation: whatsapp-bounce 7s ease-in-out infinite;
+}
+.whatsapp-bounce:hover {
+    animation-play-state: paused;
+}
