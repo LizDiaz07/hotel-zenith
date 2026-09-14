@@ -1,7 +1,7 @@
 import { useEffect, useState, type FormEvent, type ChangeEvent } from "react";
 import { contactInfo, whatsappUrl } from "../config/contact";
 
-import iconPin from "../assets/icons/Icon-pin-contacto.svg";
+import iconPin from "../assets/icons/icon-pin-contacto.svg";
 import iconPhone from "../assets/icons/icon-telefono.svg";
 import iconEmail from "../assets/icons/icon-email.svg";
 //import iconInstagram from "../assets/icons/icon-instagram.png";
