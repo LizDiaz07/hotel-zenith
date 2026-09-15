@@ -11,7 +11,7 @@ export const contactInfo = {
   whatsapp: {
     display: "+52 238 168 6528",
     number: "522381686528",
-    message: "Hola, me gustaría obtener más información sobre Hotel ZENITH.",
+    message: "Hola, me gustaría obtener información sobre Hotel ZENITH.",
   },
   email: "recepcion@hotelzenith.com.mx",
   social: {

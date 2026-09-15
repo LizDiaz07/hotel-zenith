@@ -29,9 +29,9 @@ const TopNavigationBar: FunctionComponent<TopNavigationBarType> = ({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const onButtonReservarClick = () => {
-  window.open(bookingUrl, "_blank", "noopener,noreferrer");
-};
+  //const onButtonReservarClick = () => {
+  //window.open(bookingUrl, "_blank", "noopener,noreferrer");
+//};
 
   // Cuando la barra está oscura (scrolled o menú abierto)
   const isDark = menuOpen || scrolled;
@@ -67,8 +67,10 @@ const TopNavigationBar: FunctionComponent<TopNavigationBarType> = ({
 
         {/* Botón Reservar + hamburguesa */}
         <div className="flex items-center gap-3 shrink-0">
-          <button
-            onClick={onButtonReservarClick}
+          <a
+            href={bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className={`${
               menuOpen ? "hidden" : "flex"
             } cursor-pointer border-none py-2 px-4 sm:px-6 shadow-md rounded-full items-center justify-center transition-all duration-300 ${
@@ -81,7 +83,7 @@ const TopNavigationBar: FunctionComponent<TopNavigationBarType> = ({
               <span className="md:hidden">Reservar</span>
               <span className="hidden md:inline">Reservar ahora</span>
             </span>
-          </button>
+          </a>
 
           <button
             className="xl:hidden text-white text-2xl sm:text-3xl"
@@ -106,12 +108,14 @@ const TopNavigationBar: FunctionComponent<TopNavigationBarType> = ({
               {link.label}
             </Link>
           ))}
-          <button
-            onClick={onButtonReservarClick}
-            className="w-full mt-2 cursor-pointer border-none py-2 px-6 bg-white text-[#1b236e] rounded-full font-[Poppins] font-semibold hover:bg-white/90 transition-colors"
+          <a
+            href={bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full mt-2 cursor-pointer border-none py-2 px-6 bg-white text-[#1b236e] rounded-full font-[Poppins] font-semibold hover:bg-white/90 transition-colors text-center"
           >
             Reservar ahora
-          </button>
+          </a>
         </nav>
       )}
     </div>
